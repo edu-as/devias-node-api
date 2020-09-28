@@ -15,7 +15,6 @@ mongoose.connect(
 
 requireDir("./src/models");
 
-
 //rotas
 app.use("/api", require("./src/routes"));
 
