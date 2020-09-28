@@ -14,20 +14,11 @@ mongoose.connect(
 
 requireDir("./src/models");
 
-const Product = mongoose.model("Product");
 
-//primeira rota
-app.get("/", (req, res) => {
-    Product.create({
-        title: "React Natice",
-        description: "Build native apps with React",
-        url: "http://github.com/facebook/react-native"
-    });
+//rotas
+app.use("/api", require("./src/routes"));
 
-    return res.send('Hello Wecome to Devias-node-api developed by Duzão');
-});
-
-app.listen(3001);
+app.listen(3000);
 
 
 /* CURSO NODE BALTA.IO
