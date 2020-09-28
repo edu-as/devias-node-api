@@ -7,6 +7,7 @@ const ProductController = require("./controllers/ProductController");
 
 //primeira rota*    
 routes.get("/products", ProductController.index);
+routes.post("/products",ProductController.store);
 /*(req, res) => {
     Product.create({
         title: "React Natice",
