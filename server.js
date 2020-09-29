@@ -1,4 +1,4 @@
-// node api Rocketseat
+// node api Devias
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
@@ -20,7 +20,7 @@ requireDir("./src/models");
 //rotas
 app.use("/api", require("./src/routes"));
 
-app.listen(3000);
+app.listen(3001);
 
 
 /* CURSO NODE BALTA.IO
